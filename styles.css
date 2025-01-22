@@ -1,0 +1,253 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #002A38;
+  color: #CFEEFF;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #0081AF;
+  padding: 20px 0;
+  z-index: 1051014;
+}
+
+header .logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  color: #051014;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav a {
+  color: #051014;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #226D88;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+#hero {
+  background-color: #009ACD;
+  text-align: center;
+  padding: 100px 20px;
+  color: #051014;
+}
+
+#hero h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #226D88;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #004C66;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card .details {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card .price {
+  color: #226D88;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card button {
+  margin-top: 15px;
+  background-color: #226D88;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #004C66;
+}
+
+.card .telegram-link {
+  margin-top: 10px;
+  display: block;
+  color: #226D88;
+  text-decoration: none;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+footer {
+  background-color: #CFEEFF;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer .social-icons a:hover {
+  color: #0081AF;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.photos img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  color: #CFEEFF;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Add Account Form for Site Owner */
+.admin-section {
+  display: none;
+  margin-bottom: 50px;
+  background-color: #051014;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.admin-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-section form input, 
+.admin-section form textarea, 
+.admin-section form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #003547;
+  border-radius: 5px;
+}
+
+.admin-section form button {
+  background-color: #226D88;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-section form button:hover {
+  background-color: #004C66;
+}
